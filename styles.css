@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(202, 202, 202);
+}
+
+.container {
+    border: 2px solid black;
+    width: 50%;
+    padding: 20px 20px 20px 20px;
+    margin: 0 auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 1rem;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 100px;
+    
+}
+
+.cell {
+    border-radius: 5px;
+    padding: 5px 0 5px 10px;
+}
+
+.el-2 {
+    grid-area: 2 / 3;
+    grid-column: 3 / span 3;
+    border: 2px solid red;
+}
+
+.el-11 {
+    grid-area: 3 / 1;
+}
+
+.el-12 {
+    grid-area: 3 / 2;
+}
+
+.el-10 {
+    grid-area: 2 / 6;
+}
+
+.container :nth-child(odd) {
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+.container :nth-child(even) {
+    background-color: rgb(88, 90, 60);
+}
